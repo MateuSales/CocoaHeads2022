@@ -15,7 +15,7 @@ protocol PresenterOutput: AnyObject {
     func startLoading()
     func stopLoading()
     func display(with viewModel: ViewModel)
-    func displayError()
+    func displayError(with viewModel: AlertViewModel)
 }
 
 protocol PresenterInput: AnyObject {
@@ -40,7 +40,7 @@ final class Presenter: PresenterInput {
             case let .success(name):
                 self.view?.display(with: Presenter.makeViewModel(with: name))
             case .failure:
-                self.view?.displayError()
+                self.view?.displayError(with: Presenter.makeErrorViewModel())
             }
         }
     }
@@ -49,5 +49,13 @@ final class Presenter: PresenterInput {
     
     static func makeViewModel(with name: String) -> ViewModel {
         .init(description: "Olá, \(name)")
+    }
+    
+    static func makeErrorViewModel() -> AlertViewModel {
+        .init(
+            title: "Tivemos um problema",
+            message: "Tente novamente mais tarde",
+            actionTitle: "OK"
+        )
     }
 }

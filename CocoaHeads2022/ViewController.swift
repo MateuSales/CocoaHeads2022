@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class ViewController: UIViewController, AlertPresentable {
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
@@ -45,23 +45,6 @@ final class ViewController: UIViewController {
         setupConstraints()
 
         presenter.loadInitialState()
-    }
-}
-
-// MARK: - Private Methods
-
-private extension ViewController {
-    func showError() {
-        let alert = UIAlertController(
-            title: "Tivemos um problema :(",
-            message: "Tente novamente mais tarde",
-            preferredStyle: .alert
-        )
-        
-        let action = UIAlertAction(title: "OK", style: .default)
-        
-        alert.addAction(action)
-        present(alert, animated: true)
     }
 }
 
@@ -107,7 +90,7 @@ extension ViewController: PresenterOutput {
         nameLabel.text = viewModel.description
     }
     
-    func displayError() {
-        showError()
+    func displayError(with viewModel: AlertViewModel) {
+        showAlert(with: viewModel)
     }
 }

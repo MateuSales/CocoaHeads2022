@@ -16,6 +16,7 @@
 		CEBBCB47290763E500203B2F /* NameLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB46290763E500203B2F /* NameLoader.swift */; };
 		CEBBCB492907644800203B2F /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB482907644800203B2F /* Presenter.swift */; };
 		CEBBCB4B29076A0800203B2F /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB4A29076A0800203B2F /* Factory.swift */; };
+		CEBBCB4D29076BAE00203B2F /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB4C29076BAE00203B2F /* AlertPresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CEBBCB46290763E500203B2F /* NameLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameLoader.swift; sourceTree = "<group>"; };
 		CEBBCB482907644800203B2F /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		CEBBCB4A29076A0800203B2F /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		CEBBCB4C29076BAE00203B2F /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CEBBCB3829075D1100203B2F /* Assets.xcassets */,
 				CEBBCB2F29075D1100203B2F /* AppDelegate.swift */,
 				CEBBCB3129075D1100203B2F /* SceneDelegate.swift */,
+				CEBBCB4C29076BAE00203B2F /* AlertPresentable.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				CEBBCB3029075D1100203B2F /* AppDelegate.swift in Sources */,
 				CEBBCB47290763E500203B2F /* NameLoader.swift in Sources */,
 				CEBBCB3229075D1100203B2F /* SceneDelegate.swift in Sources */,
+				CEBBCB4D29076BAE00203B2F /* AlertPresentable.swift in Sources */,
 				CEBBCB4B29076A0800203B2F /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
