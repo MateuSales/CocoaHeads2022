@@ -13,6 +13,7 @@
 		CEBBCB3929075D1100203B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBBCB3829075D1100203B2F /* Assets.xcassets */; };
 		CEBBCB3C29075D1100203B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBBCB3A29075D1100203B2F /* LaunchScreen.storyboard */; };
 		CEBBCB4529075E7000203B2F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB4429075E7000203B2F /* API.swift */; };
+		CEBBCB47290763E500203B2F /* NameLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB46290763E500203B2F /* NameLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CEBBCB3B29075D1100203B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBBCB3D29075D1100203B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBBCB4429075E7000203B2F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CEBBCB46290763E500203B2F /* NameLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CEBBCB3D29075D1100203B2F /* Info.plist */,
 				CEBBCB4329075D6000203B2F /* Supporting Files */,
 				CEBBCB3329075D1100203B2F /* ViewController.swift */,
+				CEBBCB46290763E500203B2F /* NameLoader.swift */,
 				CEBBCB4429075E7000203B2F /* API.swift */,
 			);
 			path = CocoaHeads2022;
@@ -148,6 +151,7 @@
 				CEBBCB3429075D1100203B2F /* ViewController.swift in Sources */,
 				CEBBCB4529075E7000203B2F /* API.swift in Sources */,
 				CEBBCB3029075D1100203B2F /* AppDelegate.swift in Sources */,
+				CEBBCB47290763E500203B2F /* NameLoader.swift in Sources */,
 				CEBBCB3229075D1100203B2F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
