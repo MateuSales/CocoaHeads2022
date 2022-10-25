@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class ViewController: UIViewController, AlertPresentable {
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
@@ -25,41 +25,26 @@ final class ViewController: UIViewController {
         view.style = UIActivityIndicatorView.Style.medium
         return view
     }()
-
+    
+    private let presenter: PresenterInput
+    
+    init(presenter: PresenterInput) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         addViewsInHierarchy()
         setupConstraints()
-        
-        loadingView.startAnimating()
-        API.shared.request(url: .init(string: "http://any-url")!) { [weak self] name in
-            guard let self = self else { return }
-            self.loadingView.stopAnimating()
-            guard let name = name else {
-                self.showError()
-                return
-            }
 
-            self.nameLabel.text = "Olá, \(name)"
-        }
-    }
-}
-
-// MARK: - Private Methods
-
-private extension ViewController {
-    func showError() {
-        let alert = UIAlertController(
-            title: "Tivemos um problema :(",
-            message: "Tente novamente mais tarde",
-            preferredStyle: .alert
-        )
-        
-        let action = UIAlertAction(title: "OK", style: .default)
-        
-        alert.addAction(action)
-        present(alert, animated: true)
+        presenter.loadInitialState()
     }
 }
 
@@ -87,5 +72,25 @@ private extension ViewController {
              loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
              loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
          ])
+    }
+}
+
+// MARK: - Presenter Output
+
+extension ViewController: PresenterOutput {
+    func startLoading() {
+        loadingView.startAnimating()
+    }
+    
+    func stopLoading() {
+        loadingView.stopAnimating()
+    }
+    
+    func display(with viewModel: ViewModel) {
+        nameLabel.text = viewModel.description
+    }
+    
+    func displayError(with viewModel: AlertViewModel) {
+        showAlert(with: viewModel)
     }
 }
