@@ -26,16 +26,24 @@ final class ViewController: UIViewController {
         return view
     }()
     
+    private let presenter: PresenterInput
     
-    private let presenter = Presenter(loader: LoadNameFromRemote())
-
+    init(presenter: PresenterInput) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         addViewsInHierarchy()
         setupConstraints()
-        
-        presenter.view = self
+
         presenter.loadInitialState()
     }
 }

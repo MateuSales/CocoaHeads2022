@@ -18,7 +18,11 @@ protocol PresenterOutput: AnyObject {
     func displayError()
 }
 
-final class Presenter {
+protocol PresenterInput: AnyObject {
+    func loadInitialState()
+}
+
+final class Presenter: PresenterInput {
     weak var view: PresenterOutput?
     private let loader: NameLoader
     

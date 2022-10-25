@@ -15,6 +15,7 @@
 		CEBBCB4529075E7000203B2F /* LoadNameFromRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB4429075E7000203B2F /* LoadNameFromRemote.swift */; };
 		CEBBCB47290763E500203B2F /* NameLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB46290763E500203B2F /* NameLoader.swift */; };
 		CEBBCB492907644800203B2F /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB482907644800203B2F /* Presenter.swift */; };
+		CEBBCB4B29076A0800203B2F /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB4A29076A0800203B2F /* Factory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CEBBCB4429075E7000203B2F /* LoadNameFromRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNameFromRemote.swift; sourceTree = "<group>"; };
 		CEBBCB46290763E500203B2F /* NameLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameLoader.swift; sourceTree = "<group>"; };
 		CEBBCB482907644800203B2F /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		CEBBCB4A29076A0800203B2F /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CEBBCB3D29075D1100203B2F /* Info.plist */,
 				CEBBCB4329075D6000203B2F /* Supporting Files */,
 				CEBBCB3329075D1100203B2F /* ViewController.swift */,
+				CEBBCB4A29076A0800203B2F /* Factory.swift */,
 				CEBBCB46290763E500203B2F /* NameLoader.swift */,
 				CEBBCB482907644800203B2F /* Presenter.swift */,
 				CEBBCB4429075E7000203B2F /* LoadNameFromRemote.swift */,
@@ -157,6 +160,7 @@
 				CEBBCB3029075D1100203B2F /* AppDelegate.swift in Sources */,
 				CEBBCB47290763E500203B2F /* NameLoader.swift in Sources */,
 				CEBBCB3229075D1100203B2F /* SceneDelegate.swift in Sources */,
+				CEBBCB4B29076A0800203B2F /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
