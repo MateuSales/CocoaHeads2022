@@ -14,6 +14,7 @@
 		CEBBCB3C29075D1100203B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBBCB3A29075D1100203B2F /* LaunchScreen.storyboard */; };
 		CEBBCB4529075E7000203B2F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB4429075E7000203B2F /* API.swift */; };
 		CEBBCB47290763E500203B2F /* NameLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB46290763E500203B2F /* NameLoader.swift */; };
+		CEBBCB492907644800203B2F /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB482907644800203B2F /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CEBBCB3D29075D1100203B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBBCB4429075E7000203B2F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		CEBBCB46290763E500203B2F /* NameLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameLoader.swift; sourceTree = "<group>"; };
+		CEBBCB482907644800203B2F /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				CEBBCB4329075D6000203B2F /* Supporting Files */,
 				CEBBCB3329075D1100203B2F /* ViewController.swift */,
 				CEBBCB46290763E500203B2F /* NameLoader.swift */,
+				CEBBCB482907644800203B2F /* Presenter.swift */,
 				CEBBCB4429075E7000203B2F /* API.swift */,
 			);
 			path = CocoaHeads2022;
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBBCB492907644800203B2F /* Presenter.swift in Sources */,
 				CEBBCB3429075D1100203B2F /* ViewController.swift in Sources */,
 				CEBBCB4529075E7000203B2F /* API.swift in Sources */,
 				CEBBCB3029075D1100203B2F /* AppDelegate.swift in Sources */,
