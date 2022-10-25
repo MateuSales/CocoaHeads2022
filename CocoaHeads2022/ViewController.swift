@@ -25,6 +25,9 @@ final class ViewController: UIViewController {
         view.style = UIActivityIndicatorView.Style.medium
         return view
     }()
+    
+    
+    private let presenter = Presenter(loader: LoadNameFromRemote())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,17 +35,8 @@ final class ViewController: UIViewController {
         addViewsInHierarchy()
         setupConstraints()
         
-        loadingView.startAnimating()
-        API.shared.request(url: .init(string: "http://any-url")!) { [weak self] name in
-            guard let self = self else { return }
-            self.loadingView.stopAnimating()
-            guard let name = name else {
-                self.showError()
-                return
-            }
-
-            self.nameLabel.text = "Olá, \(name)"
-        }
+        presenter.view = self
+        presenter.loadInitialState()
     }
 }
 
@@ -87,5 +81,25 @@ private extension ViewController {
              loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
              loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
          ])
+    }
+}
+
+// MARK: - Presenter Output
+
+extension ViewController: PresenterOutput {
+    func startLoading() {
+        loadingView.startAnimating()
+    }
+    
+    func stopLoading() {
+        loadingView.stopAnimating()
+    }
+    
+    func display(with viewModel: ViewModel) {
+        nameLabel.text = viewModel.description
+    }
+    
+    func displayError() {
+        showError()
     }
 }
