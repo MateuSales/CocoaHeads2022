@@ -18,6 +18,7 @@
 		CEBBCB4B29076A0800203B2F /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB4A29076A0800203B2F /* Factory.swift */; };
 		CEBBCB4D29076BAE00203B2F /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB4C29076BAE00203B2F /* AlertPresentable.swift */; };
 		CEBBCB5529076DB900203B2F /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBCB5429076DB900203B2F /* PresenterTests.swift */; };
+		CEBBCB5C29078C0A00203B2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CEBBCB5B29078C0A00203B2F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		CEBBCB4C29076BAE00203B2F /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
 		CEBBCB5229076DB900203B2F /* CocoaHeads2022Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeads2022Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBBCB5429076DB900203B2F /* PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
+		CEBBCB5B29078C0A00203B2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		CEBBCB2E29075D1100203B2F /* CocoaHeads2022 */ = {
 			isa = PBXGroup;
 			children = (
+				CEBBCB5B29078C0A00203B2F /* README.md */,
 				CEBBCB3D29075D1100203B2F /* Info.plist */,
 				CEBBCB4329075D6000203B2F /* Supporting Files */,
 				CEBBCB3329075D1100203B2F /* ViewController.swift */,
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBBCB5C29078C0A00203B2F /* README.md in Resources */,
 				CEBBCB3C29075D1100203B2F /* LaunchScreen.storyboard in Resources */,
 				CEBBCB3929075D1100203B2F /* Assets.xcassets in Resources */,
 			);
