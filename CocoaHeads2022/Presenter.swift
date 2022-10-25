@@ -38,20 +38,20 @@ final class Presenter: PresenterInput {
             self.view?.stopLoading()
             switch result {
             case let .success(name):
-                self.view?.display(with: Presenter.makeViewModel(with: name))
+                self.view?.display(with: self.makeViewModel(with: name))
             case .failure:
-                self.view?.displayError(with: Presenter.makeErrorViewModel())
+                self.view?.displayError(with: self.makeErrorViewModel())
             }
         }
     }
     
     // MARK: - Private Methods
     
-    static func makeViewModel(with name: String) -> ViewModel {
+    private func makeViewModel(with name: String) -> ViewModel {
         .init(description: "Olá, \(name)")
     }
     
-    static func makeErrorViewModel() -> AlertViewModel {
+    private func makeErrorViewModel() -> AlertViewModel {
         .init(
             title: "Tivemos um problema",
             message: "Tente novamente mais tarde",
